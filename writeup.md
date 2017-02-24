@@ -22,7 +22,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 to delete the noise in the image after that I used canny function to detect the edges in the image.
 to limit the view into the edges in the road lanes I used a four sided polygon mask.
 the next step is to detect the lines in the image which is done by computing the hough transform.
-At this point many lines are detected in the edges of  the lanes like illustrated iin the images below. 
+At this point many lines are detected in the edges of  the lanes like illustrated in the images below. 
 
 ![alt white lane detect][image1]
 
@@ -55,4 +55,5 @@ be absolutly very far from reality.
 ###3. possible improvements to the pipeline
 
 A possible improvement would be to use two different edge masks, one for each lane.
+
 Another potential improvement could be to draw a curve not just a line.
