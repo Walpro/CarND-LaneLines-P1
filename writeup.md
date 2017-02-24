@@ -33,15 +33,19 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 the slopes of the lines and dividing them in two groups:
 * Lines with Positive slope value for the right lane
 * Lines with Negative slope value for the left lane
+
 Then I used whighted mean to compute the average slope value with giving more importance(higher weight)
 to the first lines.
+To finish I calculated the parameters of the two lines using the slope and the first point encountred for
+each side and extrapolated the lines to the bottom and center of the image.
 
 
 
 ###2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when a white car or thing appers in the centre of the 
+lane which may result in many new lines that will diverge the main slope and so the lines from from the lanes. 
 
 Another shortcoming could be ...
 
