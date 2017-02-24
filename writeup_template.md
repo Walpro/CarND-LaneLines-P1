@@ -16,6 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./grayscale.jpg "Grayscale"
+[image2]: ./lanes_solidWhiteRight.jpg
 
 ---
 
@@ -27,13 +28,15 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 to delete the noise in the image after that I used canny function to detect the edges in the image.
 to limit the view into the edges in the road lanes I used a four sided polygon mask.
 the next step is to detect the lines in the image which is done by computing the hough transform.
-At this point many lines are detected in the edges of  the lanes in the image. 
+At this point many lines are detected in the edges of  the lanes like illustrated iin the images below. 
+![alt text][image2]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 ![alt text][image1]
+![alt text][image2]
 
 
 ###2. Identify potential shortcomings with your current pipeline
