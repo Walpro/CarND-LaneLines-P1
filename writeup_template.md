@@ -1,10 +1,3 @@
-#**Finding Lane Lines on the Road** 
-
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
 
 **Finding Lane Lines on the Road**
 
@@ -17,7 +10,7 @@ The goals / steps of this project are the following:
 
 
 [image1]: ./lanes_solidWhiteRight.jpg
-[image2]: .lanes_solidYellowCurve/.jpg 
+[image2]: ./lanes_solidYellowCurve.jpg 
 
 ---
 
@@ -33,7 +26,7 @@ At this point many lines are detected in the edges of  the lanes like illustrate
 
 ![alt white lane detect][image1]
 
-![alt ellow lane detect][image2]
+![alt yellow lane detect][image2]
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
