@@ -35,23 +35,24 @@ the slopes of the lines and dividing them in two groups:
 * Lines with Negative slope value for the left lane
 
 Then I used whighted mean to compute the average slope value with giving more importance(higher weight)
-to the first lines.
+to the first lines to limit the effect of any line with a highly different slope value.
 To finish I calculated the parameters of the two lines using the slope and the first point encountred for
 each side and extrapolated the lines to the bottom and center of the image.
 
 
 
-###2. Identify potential shortcomings with your current pipeline
+###2. potential shortcomings with your current pipeline
 
 
 One potential shortcoming would be what would happen when a white car or thing appers in the centre of the 
 lane which may result in many new lines that will diverge the main slope and so the lines from from the lanes. 
 
-Another shortcoming could be ...
+Another shortcoming could be wrong lanes detection in a sharp curve. the camera will see less lanes but the 
+program will extrapolate and suggest that the lanes are still existent and maybe straight as well wich would
+be absolutly very far from reality.
 
 
-###3. Suggest possible improvements to your pipeline
+###3. possible improvements to the pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to use two different edge masks, one for each lane.
+Another potential improvement could be to draw a curve not just a line.
