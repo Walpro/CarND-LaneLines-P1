@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1.Pipeline Description.
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I applied Gaussian smoothing 
 to delete the noise in the image after that I used canny function to detect the edges in the image.
@@ -29,7 +29,12 @@ At this point many lines are detected in the edges of  the lanes like illustrate
 ![alt yellow lane detect][image2]
 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by calculating
+the slopes of the lines and dividing them in two groups:
+* Lines with Positive slope value for the right lane
+* Lines with Negative slope value for the left lane
+Then I used whighted mean to compute the average slope value with giving more importance(higher weight)
+to the first lines.
 
 
 
