@@ -15,8 +15,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./grayscale.jpg "Grayscale"
-[image2]: ./lanes_solidWhiteRight.jpg
+
+[image1]: ./lanes_solidWhiteRight.jpg
+[image2]: .lanes_solidYellowCurve/.jpg 
 
 ---
 
@@ -29,7 +30,12 @@ to delete the noise in the image after that I used canny function to detect the 
 to limit the view into the edges in the road lanes I used a four sided polygon mask.
 the next step is to detect the lines in the image which is done by computing the hough transform.
 At this point many lines are detected in the edges of  the lanes like illustrated iin the images below. 
-![alt text][image2]
+
+![white lane detect][image1]
+
+![white lane detect][image2]
+
+
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
