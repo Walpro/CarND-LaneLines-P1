@@ -31,18 +31,13 @@ to limit the view into the edges in the road lanes I used a four sided polygon m
 the next step is to detect the lines in the image which is done by computing the hough transform.
 At this point many lines are detected in the edges of  the lanes like illustrated iin the images below. 
 
-![white lane detect][image1]
+![alt white lane detect][image1]
 
-![white lane detect][image2]
-
+![alt ellow lane detect][image2]
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-![alt text][image2]
 
 
 ###2. Identify potential shortcomings with your current pipeline
